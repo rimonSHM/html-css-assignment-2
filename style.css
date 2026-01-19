@@ -286,3 +286,109 @@ body {
     line-height: 1.6;
     font-size: 0.95rem;
 }
+
+
+
+/* Container for the section */
+.featured {
+  padding: 60px 20px;
+  background-color: #0f051d; 
+  text-align: center;
+}
+
+
+.featured h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  margin: 80px 8%;
+}
+
+/* Grid Layout */
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 34px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Individual Card Styling */
+.episode-card {
+  background: #1a0b2e; 
+  border-radius: 20px;
+  padding: 0; 
+  overflow: hidden;
+  ;
+  text-align: left;
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  transition: scale(0.75);
+}
+
+.episode-card:hover {
+
+   color:#5a57ff;
+   box-shadow: 2px 8px 16px #5a57ff;
+}
+
+
+.episode-card.active {
+  border: 2px solid #5a57ff;
+}
+
+/* Responsive Video Container */
+.thumb {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; 
+}
+
+.thumb iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Text Content Padding */
+.episode-card h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 20px 20px 10px 20px;
+  margin: 0;
+}
+
+.episode-card p {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  flex-grow: 1; 
+}
+
+/* Time/Duration Label */
+.time {
+  display: inline-block;
+  color: #00ff88;
+  font-size: 0.8rem;
+  padding: 0 20px 20px 20px;
+  font-weight: bold;
+}
+
+/* Green dot before the time */
+.time::before {
+  content: "●";
+  margin-right: 8px;
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+
+
